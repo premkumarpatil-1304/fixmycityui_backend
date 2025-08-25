@@ -2,7 +2,7 @@ fastapi==0.104.1
 uvicorn==0.24.0
 python-dotenv==1.0.0
 motor==3.3.1
-pydantic==2.3.0             # prebuilt wheel, no Rust needed
+pydantic==2.3.0          # prebuilt wheel, avoids Rust
 passlib[bcrypt]==1.7.4
 python-jose==3.3.0
 python-multipart==0.0.6
