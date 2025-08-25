@@ -30,8 +30,7 @@ app.add_middleware(
 
 # MongoDB connection
 MONGODB_URL = os.getenv("MONGODB_URL")
-DB_NAME = os.getenv("MONGODB_NAME")
-
+DB_NAME = os.getenv("MONGODB_NAME")  # ✅ matches .env
 
 # Security settings
 SECRET_KEY = os.getenv("SECRET_KEY")
@@ -47,7 +46,7 @@ mongo_client = None
 db = None
 
 class IdeaCategory(str, Enum):
-    
+
     WASTE = "waste"
     POTHOLES = "potholes"  
     HEALTH = "health"
